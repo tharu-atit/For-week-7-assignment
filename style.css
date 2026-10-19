@@ -1,0 +1,150 @@
+/* Global Box-Sizing Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+/* ==========================================
+   [Step 2] Horizontal Card Layout
+   ========================================== */
+.content-wrapper {
+  display: flex;             /* Sets flexbox container for cards */
+  gap: 30px;                 /* Adds spacing between cards */
+  justify-content: center;   /* Distributes cards in the center */
+  flex-wrap: wrap;           /* Allows wrapping on smaller screens */
+  width: 100%;
+  max-width: 1000px;
+}
+
+.card-container {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  max-width: 450px;
+  width: 100%;
+  padding: 30px;
+  border: 2px solid #333333;
+  box-shadow: 0 0 20px 10px rgba(30, 215, 96, 0.2);
+  text-align: center;
+  flex: 1;                   /* Allows cards to share space evenly */
+  min-width: 300px;
+}
+
+#profile-name {
+  color: #1db954;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.card-info {
+  color: #b3b3b3;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.art-section {
+  margin: 20px 0;
+}
+
+/* ==========================================
+   [Step 3] Fix Image Overflow
+   ========================================== */
+.art-image {
+  /* width: 1000px; */       /* Commented out fixed width to prevent overflow */
+  max-width: 100%;           /* Ensures responsive image fitting */
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #282828;
+}
+
+/* Tech Stack Badge Section Styling */
+.tech-stack-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #181818;
+  border-radius: 12px;
+  border: 1px solid #282828;
+}
+
+.tech-badge {
+  background-color: #282828;
+  color: #1db954;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #333333;
+}
+
+.bio-section {
+  margin-bottom: 20px;
+}
+
+.bio-section h2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.bio-text {
+  color: #b3b3b3;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card-footer h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* ==========================================
+   [Step 1] Navigation Menu Alignment
+   ========================================== */
+.contact-links {
+  list-style: none;
+  padding: 0;
+  display: flex;             /* Aligns menu items horizontally */
+  justify-content: space-between; /* Evenly distributes space between buttons */
+  gap: 15px;
+  margin: 0;
+}
+
+.contact-links a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 1px solid #1db954;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.contact-links a:hover {
+  background-color: #1ed760;
+  border-color: #1ed760;
+  color: #121212;
+}
